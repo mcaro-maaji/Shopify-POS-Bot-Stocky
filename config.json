@@ -1,0 +1,55 @@
+{
+  "web_driver": {
+    "wait_timeout": 10
+  },
+  "sites": {
+    "shopify_loggin": "https://accounts.shopify.com/store-login",
+    "shopify_store": "https://maaji-co-test.myshopify.com",
+    "shopify_store_admin": "https://admin.shopify.com/store/maaji-co-test/",
+    "stocky_loggin": "https://stocky.shopifyapps.com/login",
+    "stocky_purchase_orders": "https://stocky.shopifyapps.com/purchase_orders"
+  },
+  "sites_actions": {
+    "stocky_purchase_orders": {
+      "create": "/new",
+      "select": "/{}",
+      "add_products": "/{}/purchase_item_imports/new",
+      "update_shipping": "/{}/edit_shipping_tax",
+      "mark_ordered": "/{}/confirm"
+    }
+  },
+  "suppliers": [
+    {
+      "name": "ART MODE S.A.S. BIC",
+      "nit": "900911000"
+    }
+  ],
+  "purchase_orders": {
+    "supplier_default_index": 0,
+    "timeout_add_products": 300
+  },
+  "locations": [
+    {
+      "name_shopify": "Cr. 48 # 61 sur 115, L123 | Unidad Industrial Vegas de Sabaneta",
+      "name_d365": "MAAJI SWIMWEAR",
+      "code_store": "000"
+    },
+    {
+      "name_shopify": "Oulet Mayorca",
+      "name_d365": "MAAJI OUTLET MAYORCA",
+      "code_store": "016"
+    },
+    {
+      "name_shopify": "POS Prueba",
+      "name_d365": "MAAJI POS PRUEBA",
+      "code_store": "017"
+    }
+  ],
+  "tax_types": {
+    "9392": {
+      "name": "IVA",
+      "code": 123123,
+      "rate": 19
+    }
+  }
+}
